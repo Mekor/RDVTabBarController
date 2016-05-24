@@ -96,7 +96,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [[self rdv_tabBarItem] setBadgeValue:[NSString stringWithFormat:@"%ld", indexPath.row+1]];
+    [[self rdv_tabBarItem] setBadgeValue:[NSString stringWithFormat:@"%zd", indexPath.row+1]];
 }
 
 @end
